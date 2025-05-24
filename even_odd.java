@@ -4,15 +4,15 @@ public class even_odd {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter number:");
-        int num = input.nextInt();
+        System.out.println("Enter a Year:");
+        int Year = input.nextInt();
 
-        if(num%2 == 0){
-            System.out.println("The number is even");
+        if(Year%4 == 0 && Year%100!=0 || Year%400 ==0){
+            System.out.println("This is leap year");
         }
+
         else{
-            System.out.println("The number is odd");
+            System.out.println("The Year is not a leap year");
         }
-
     }
 }
